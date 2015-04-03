@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test Page!</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/css_sans.css">
+</head>
+<body>
+<h1>Here is some test content.</h1>
+<div id="source">
+  This is content.
+</div>
+<div id="target">
+
+</div>
+<script language="javascript" src="javascript/css_sans.js"></script>
+<script language="javascript" src="javascript/jquery.min.js"></script>
+<style>
+  #target div{
+    float: left;
+  }
+  .space{
+    width:100px;
+  }
+</style>
+<script>
+  $(function(){
+    $('#target').html(CssSans.convertText($('#source').text()));
+  })
+</script>
+</body>
+</html>
